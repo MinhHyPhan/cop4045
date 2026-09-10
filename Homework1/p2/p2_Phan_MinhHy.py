@@ -34,7 +34,7 @@ def find_pythagorean(n):
 
 def main():
     """Main function to run the Pythagorean triples finder program."""
-    print("Welcome to the Pythagorean Triples Finder, Manager Esquire!")
+    print("Welcome to the Pythagorean Triples Finder, dear manager bud!")
     print("Please enter a positive integer n, this will be the largest"
           " number in the list")
     print("To exit, press Enter!\n")
@@ -48,7 +48,7 @@ def main():
         # If the user presses Enter without entering a number,
         # end the program.
         if n_input.strip() == "":
-            print("Goodbye! See you tomorrow!")
+            print("Goodbye! Catch you later!")
             break
 
         # Convert the user's input from a string to an integer.
