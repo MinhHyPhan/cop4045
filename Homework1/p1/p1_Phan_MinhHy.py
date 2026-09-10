@@ -115,7 +115,7 @@ def main():
 
         # Stop the program when the user presses Enter without input.
         if a_input.strip() == "":
-            print("Goodbye! See you tomorrow!")
+            print("Goodbye! Catch you on the flip side!")
             break
 
         # Convert the user's input into a number.
