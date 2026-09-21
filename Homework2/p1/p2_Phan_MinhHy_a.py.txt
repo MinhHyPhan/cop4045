@@ -1,0 +1,29 @@
+1. def line_number(test_1: str, test_2: str):
+2.     """Basically this code copy a text file, placing a line number before each line.
+3.     read_file: name of the text file 1 (to read)
+4.     write_file: name of a text file 2 (to write)
+5.     returns: None cause it's for copying the code, not use for anything else.
+6.     """
+7.     try:
+8.         with open(test_1, "r") as read_file:
+9.             with open(test_2, "w") as write_file:
+10.                 number = 1
+11. 
+12.                 # the next loop read each line on by one, copy it and write it in the new file
+13.                 for text_line in read_file:
+14.                     new_line = "{}. {}".format(number, text_line)
+15.                     write_file.write(new_line)
+16.                     number = number + 1
+17.     except Exception:
+18.         print("Unable to copy the file. Might want to check the the codes or the files, manager bud.")
+19.         raise
+20.     return
+21. 
+22. def main():
+23.     """Testing if the code above works correctly. 
+24.     This is by reprinting the whole code at the destination file with line numbers"""
+25.     line_number("p2_Phan_MinhHy_a.py", "p2_Phan_MinhHy_a.py.txt")
+26.     print("Brand new copy of this freshly made code has been created!")
+27. 
+28. main()
+29.   
