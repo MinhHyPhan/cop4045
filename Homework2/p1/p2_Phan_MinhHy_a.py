@@ -14,8 +14,8 @@ def line_number(test_1: str, test_2: str):
                     new_line = "{}. {}".format(number, text_line)
                     write_file.write(new_line)
                     number = number + 1
-    except Exception:
-        print("Unable to copy the file. Might want to check the the codes or the files, manager bud.")
+    except FileNotFoundError:
+        print("Unable to copy the file. Might want to check the codes or the file names, manager bud.")
         raise
     return
 
@@ -24,6 +24,8 @@ def main():
     This is by reprinting the whole code at the destination file with line numbers"""
     line_number("p2_Phan_MinhHy_a.py", "p2_Phan_MinhHy_a.py.txt")
     print("Brand new copy of this freshly made code has been created!")
+    print("Name: Minh Hy Phan")
+    print("Student ID: Z23766758")
 
 main()
   
