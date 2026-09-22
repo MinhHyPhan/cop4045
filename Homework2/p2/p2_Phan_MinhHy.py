@@ -21,7 +21,7 @@ short_words = [
 print("b)", short_words)
 
 # c)
-names = ['Albert Meursault Camus', 'Emily Jane Brontë, Herman Ishmael Melville']
+names = ['Albert Meursault Camus', 'Emily Jane Brontë', 'Herman Ishmael Melville']
 short_names = [
     name.split()[0] + " " + name.split()[1][0] + ". " + name.split()[2]
     for name in names
@@ -52,3 +52,5 @@ vowel_positions = {
     if text[i].lower() in "aeiou"
 }
 print("f)", vowel_positions)
+print("Name: Minh Hy Phan")
+print("ID: 23766758")
