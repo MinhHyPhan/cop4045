@@ -62,9 +62,7 @@ def testif(condition: bool, success: str, failure: str) -> None:
     print(success if condition else failure)
 
 def main() -> None:
-    """Test NVector methods with passing and failing cases."""
     v = NVector(3, 0, 1, -1)
-
     # a) Constructor with list or tuple
     testif(NVector([3, 0, 1, -1]).elements == [3, 0, 1, -1], "A PASS: list constructor", "A FAIL: list constructor")
     testif(NVector([3, 0, 1, -1]).elements == [1, 2, 3, 4], "A PASS: list constructor", "A FAIL: list constructor")
@@ -141,6 +139,8 @@ def main() -> None:
     testif(NVector.zeros(4) == NVector(0, 0, 0, 0), "J PASS: zero vector", "J FAIL: zero vector")
     testif(NVector.zeros(4) == NVector(1, 1, 1, 1), "J PASS: zero vector", "J FAIL: zero vector")
 
+    print("Name: Phan Minh Hy")
+    print("Student ID: Z23766758")
 
 if __name__ == "__main__":
     main()
